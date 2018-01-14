@@ -15,37 +15,38 @@ import java.sql.*;
 
 import org.sqlite.JDBC;
 
+///////////////////////////////////////////////////////////////
+
 public  class frame_in extends JFrame{
 	
 	 private JTextPane test=new JTextPane();
 	 private JPanel p=new JPanel();
-	 public static int text=1;//id编号
+	 public static int text=1;       //id编号
 	 
 	 Font font=new Font("宋体",Font.PLAIN,40);
 
- public frame_in()
- {
-	 
-	 //设置frame透明	 
+  public frame_in()
+   {
+	    //设置frame透明	 
 	 this.setUndecorated(true);	
 	 this.setBackground(new Color(0, 0, 0, 0));
 	 
-	 //设置JTextPane透明
+	   //设置JTextPane透明
 	test.setOpaque(false);
 	test.setEditable(false);
-	//设置字体大小、颜色等
+	  //设置字体大小、颜色等
 	test.setFont(font);
 	test.setForeground(Color.RED);
 	
-	//设置面板
+	  //设置面板
     p.setLayout(new BoxLayout(p,BoxLayout.Y_AXIS));
 	p.add(test);
 	p.setOpaque(false);
 	
-	//设置JFrame
+	  //设置JFrame
 	this.add(p);
-	//this.setSize(1200, 675);
-	 //this.setLocation(450, 200);
+	  //this.setSize(1200, 675);
+	  //this.setLocation(450, 200);
 	
 	this.setExtendedState(Frame.MAXIMIZED_BOTH);
 	 this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -58,7 +59,8 @@ public  class frame_in extends JFrame{
 
  }
  
-public class TextTimer extends TimerTask{
+
+  public class TextTimer extends TimerTask{
 	public void run()
 	 {
 		 try
@@ -95,3 +97,5 @@ public class TextTimer extends TimerTask{
 }
  
 }
+
+// 邓伯瑜
